@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  beautiful_soup:
+    build: .
+    tty: true
+    container_name: beautiful_soup
+    volumes:
+      - ./app:/app
+      - ./data:/root/opt/data
+    environment:
+      TZ: "Asia/Tokyo"
